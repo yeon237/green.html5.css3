@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+
+/* 초기화 */
+
+* { margin: 0; padding: 0; }
+body { font-family: 'Helvetica', sans-serif; }
+li { list-style: none; }
+a { text-decoration: none; }
+
+/* 헤더 */
+
+#main_header {
+      height: 45px;
+      background: url('./header_background.png');
+
+      position: relative;
+      text-align: center;
+      line-height: 45px;
+}
+
+#main_header > h1 {
+      color: #fff;
+}
+
+#main_header > a, #main_header > label {
+      display: block;
+      height: 32px;
+      position: absolute;
+}
+
+#main_header > a.left {
+      width: 62px;
+      left: 5px; top: 7px;
+}
+
+#main_header > label.right {
+      width: 32px;
+      right: 5px; top: 7px;
+}
+
+/* 스프라이트 이미지 */
+
+#main_header > a.left {
+      background: url(./sprites.png);
+      background-position: 0px 0px;
+      text-indent: -99999px;
+}
+#main_header > label.right {
+      background: url(./sprites.png);
+      background-position: -62px 0px;
+      /* text-indent: -99999px; */
+}
+
+/* 토글목록 */
+
+/* 토글구현  */
+#toggle { display: none; }
+#toggle + #wrap > #toggle_gnb_wrap { display: none; }
+#toggle:checked + #wrap > #toggle_gnb_wrap { display: block; }
+
+/* 레이아웃색상 */
+#toggle_gnb_wrap {
+      background: #363636;
+      padding: 15px;
+}
+#toggle_gnb {
+      background: #fff;
+      padding: 5px;
+}
+
+/* 토글목록 */
+#toggle_gnb > ul { overflow: hidden; }
+#toggle_gnb > ul > li {
+      width: 80px; float: left;
+}
+
+/* 네비게이션 */
+#top_gnb {
+      overflow: hidden;
+      border-bottom: 1px solid black;
+      background: #b42111;
+}
+#top_gnb > div > a {
+      /* 수평정렬 */
+      float: left; width: 25%;
+
+      /* 크기및색상정렬 */
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      color: #fff;
+}
+
+/* 네비게이션 2 */
+#bottom_gnb {
+      display: table;
+      width: 100%;
+      border-bottom: 1px solid black;
+}
+#bottom_gnb > div {
+      display: table-cell;
+      position: relative;
+}
+#bottom_gnb > div > a {
+      display: block;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+}
+#bottom_gnb > div > a::before {
+      display: block;
+      position: absolute;
+      top: 9px; left: -1px;
+      width: 1px; height: 15px;
+      border-left: 1px solid black;
+      content: '';
+}
+
+/* 본문 */
+#section_header { padding: 20px;}
+#section_article { padding: 10px;}
+
+/* 푸터 */
+#main_footer {
+      padding: 10px;
+      border-top: 3px solid black;
+      text-align: center;
+}
