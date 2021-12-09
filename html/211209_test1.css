@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/* 초기화 */
+
+* {
+      margin: 0; padding: 0;
+      font: normal 12px 'Dotum';
+}
+
+a { text-decoration: none; }
+img { border: 0;}
+ul { list-style: none;}
+
+body {
+      width: 980px;
+      margin: 0 auto;
+}
+
+/* 헤더 */
+
+#main_header {
+      position: relative;
+      height: 75px;
+}
+
+#main_header > h1.logo {
+      position: absolute;
+      left: 15px; top: 10px;
+}
+
+#main_header > div.login_menu {
+      position: absolute;
+      top: 10px; right: 0px;
+}
+
+/* 사이드 */
+
+body {
+      position: relative;
+}
+
+#global_aside {
+      position: absolute;
+      left: 990px; top: 75px;
+      width: 90px;
+}
+
+#global_aside a {
+      display: block;
+      margin-bottom: 5px;
+}
