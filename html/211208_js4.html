@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <script>
+            var sales1 = 1200
+            var sales2 = 1300
+            var sales3 = 1000
+            var sales4 = prompt("4분기 판매량은?",""); 
+
+            var normalSales = (sales1 + sales2 + sales3) / 3;
+            var result = sales4 >= normalSales && sales4 < normalSales;
+            result = result ? "판매량이 평균 이상입니다." : "판매량이 평균 미달입니다.";
+            document.write(result);
+      </script>
+      
+</head>
+<body>
+      
+</body>
+</html>
