@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <script>
+            // ES5
+            function myFunc1(name) {
+                  return name;
+            }
+
+            console.log(myFunc1('박지연'));
+
+            // ES6
+            const myFunc2 = (name) => {
+                  return `${name}`;
+            }
+
+            console.log(myFunc2('박지연'));
+
+            // 또는 화살표를 사용하거나 'return' 키워드를 사용하지 않아도 됩니다.
+            const myFunc3 = (name) => `${name}`;
+
+            console.log(myFunc3('박지연'));
+      </script>
+</head>
+<body>
+      
+</body>
+</html>

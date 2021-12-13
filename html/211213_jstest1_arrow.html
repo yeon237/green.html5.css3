@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <script>
+            // 계산기 만들기,  숫자 2개를 입력받아서 
+            // 덧셈 뺄셈 곱셈 나눗셈 기능을 수행하는 함수 4개를 만들고 각각의 결과값을 출력하시오.
+            // 덧셈
+
+            var num = 0;
+
+            var num1 = Number(prompt("첫번째 숫자 입력",""));
+            var num2 = Number(prompt("두번째 숫자 입력",""));
+
+            const sum = (num1, num2) => {
+                  return `${num1 + num2}`;
+            }
+
+            const a = (num1, num2) => {
+                  return `${num1 - num2}`;
+            }
+
+            const b = (num1, num2) => {
+                  return `${num1 * num2}`;
+            }
+
+            const c = (num1, num2) => {
+                  return `${num1 * num2}`;
+            }
+
+            document.write(`덧셈: ${sum(num1, num2)} <br />`);
+            document.write(`뺄셈: ${a(num1, num2)} <br />`);
+            document.write(`곱셈: ${b(num1, num2)} <br />`);
+            document.write(`나눗셈: ${c(num1, num2)} <br />`);
+      </script>
+      
+</head>
+<body>
+      
+</body>
+</html>
