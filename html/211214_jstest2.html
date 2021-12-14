@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        var dog = {
+            name: "복돌이",
+            situation: "밥을 먹는다",
+            nameInfo: function() {
+                document.write(`이름: ${this.name}`);
+            },
+            situationInfo: function() {
+                document.write(`<br /> 상황: ${this.situation}`);
+            }
+        }
+        dog.nameInfo();
+        dog.situationInfo();
+        */
+
+        /*
+        // 객체 생성 방법3 -  함수와 객체
+        function Dog(name, situation) {
+            this.name = name;
+            this.situation = situation;
+
+            this.printInfo = function() {
+                document.write(`이름: ${this.name} <br /> 상황: ${this.situation} <br />`);
+            }
+        }
+
+        var dog2 = new Dog("복돌이", "밥을 먹는다");
+        dog2.printInfo();
+
+        var dog3 = new Dog("삐삐", "짖는다");
+        dog3.printInfo();
+        */
+
+        // 객체 생성 방법 4 - 프로토 타입
+        function Dog(name, situation) {
+            this.name = name;
+            this.situation = situation;
+        }
+        Dog.prototype.printInfo = function() {
+            document.write(`이름: ${this.name} <br /> 상황: ${this.situation} <br />`);
+        }
+
+        var dog2 = new Dog("복돌이", "밥을 먹는다");
+        dog2.printInfo();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

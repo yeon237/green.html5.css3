@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 속성과, 메소드로 나눠서 구조를 만들고 메소드를 실행해보세요.
+        // 자동차
+
+        /*
+        var car = {
+            color: "white",
+            gear: "auto",
+            colorInfo: function() {
+                document.write(`색상: ${this.color}`);
+            },
+            gearInfo: function() {
+                document.write(`기어: ${this.gear}`);
+            }
+        }
+
+        car.colorInfo();
+        car.gearInfo();
+        */
+
+        // 객체 생성 방법 4 - 프로토 타입
+
+        function Car(color, gear) {
+            this.color = color;
+            this.gear = gear;
+        }
+
+        Car.prototype.printInfo = function() {
+            document.write(`색상: ${this.color}, 기어: ${this.gear} <br />`);
+        }
+
+        var car2 = new Car("white", "auto");
+        car2.printInfo();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

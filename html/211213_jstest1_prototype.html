@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <script>
+            // 계산기 만들기,  숫자 2개를 입력받아서 
+            // 덧셈 뺄셈 곱셈 나눗셈 기능을 수행하는 함수 4개를 만들고 각각의 결과값을 출력하시오.
+            // 덧셈
+
+            /*
+            var num = 0;
+
+            var num1 = Number(prompt("첫번째 숫자 입력",""));
+            var num2 = Number(prompt("두번째 숫자 입력",""));
+
+            function sum(num1, num2) {
+                  return num1 + num2;
+            }
+
+            document.write("덧셈: " + sum(num1, num2) + "<br />");
+
+            function a(num1, num2) {
+                  return num1 - num2;
+            }
+
+            document.write("뺄셈: " + a(num1, num2) + "<br />");
+            
+            function b(num1, num2) {
+                  return num1 * num2;
+            }
+
+            document.write("곱셈: " + b(num1, num2) + "<br />");
+
+            function c(num1, num2) {
+                  return num1 / num2;
+            }
+
+            document.write("나눗셈: " + c(num1, num2) + "<br />");
+            */
+
+            // 객체 생성 방법 4 - 프로토 타입 
+            // 계산기 - 덧셈
+
+            function Calculator(num1, num2) {
+                  this.num1 = num1;
+                  this.num2 = num2;
+            }
+            Calculator.prototype.sum1 = function() {
+                  var sum = this.num1 + this.num2;
+                  return sum;
+            };
+            Calculator.prototype.sum2 = function() {
+                  var sum = this.num1 - this.num2;
+                  return sum;
+            };
+            Calculator.prototype.sum3 = function() {
+                  var sum = this.num1 * this.num2;
+                  return sum;
+            };
+            Calculator.prototype.sum4 = function() {
+                  var sum = this.num1 / this.num2;
+                  return sum;
+            }
+
+            var addition = new Calculator(10, 20);
+            document.write(`덧셈: ${addition.sum1()} <br />`);
+
+            var subtract = new Calculator(50, 10);
+            document.write(`뺄셈: ${subtract.sum2()} <br />`);
+
+            var multiply = new Calculator(5, 7);
+            document.write(`곱셈: ${multiply.sum3()} <br />`);
+
+            var division = new Calculator(50, 10);
+            document.write(`나눗셈: ${division.sum4()} <br />`);
+      </script>
+      
+</head>
+<body>
+      
+</body>
+</html>

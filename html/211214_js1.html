@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <script> 
+
+            //객체 생성 방법 1
+
+            /*
+
+            // 객체 = (속성 + 메소드(함수))
+
+            var tv = new Object(); // 객체 생성 (빈껍데기)
+
+            //속성 지정 (  . 하고 임의로 지정해준다 )
+            tv.color = "black";
+            tv.size = 50;
+
+            //메소드 (기능 = 함수) 만들기
+            tv.printInfo = function() {
+                  document.write(`색상: ${this.color}, 사이즈: ${this.size}`);   // this는 생성한 객체명을 의미한다.
+            }
+
+            tv.printInfo();
+            
+            */
+
+
+
+            //객체 생성 방법 2
+
+            /*
+            
+            var tv = {
+                  color: "black",
+                  size: 50,
+                  printInfo: function() {
+                        document.write(`색상: ${this.color}, 사이즈: ${this.size}`);
+                  }
+            };
+
+            tv.printInfo();
+            document.write(`<br /> ${tv.color}`);
+
+            */
+
+            /*
+            var slide = {
+                  size: 1200,
+                  speed: 2000,
+                  clickArrow: function() {
+                        document.write(`오른쪽 가기`);
+                  },
+                  fadeInOut: function() {
+                        document.write(`페이드 인 아웃`);
+                  }
+            };
+
+            slide.clickArrow();
+            slide.fadeInOut();
+            */
+
+            /*
+            var weather = {
+                  degree: 10,
+                  wind: 30,
+                  degreeShow: function() {
+                        document.write(`온도: ${this.degree}`);
+                  },
+                  windShow: function() {
+                        document.write(`바람: ${this.wind}`);
+                  }
+            }
+
+            weather.degreeShow();
+            weather.windShow();
+            */
+
+            /*
+            //객체 생성 방법 3 - 함수와 객체
+
+            function Tv(color, size) {
+                  this.color = color;
+                  this.size = size;
+
+                  this.printInfo = function (){
+                        document.write(`색상: ${this.color}, 사이즈: ${this.size} <br />`);
+                  }
+            }
+
+            var television = new Tv("white", 60);
+            television.printInfo();
+
+            var television2 = new Tv("black", 50);
+            television2.printInfo();
+            */
+
+
+            // 객체 생성 방법 4 - 프로토 타입
+
+            function Tv(color, size) {
+                  this.color = color;
+                  this.size = size;
+            }
+
+            Tv.prototype.printInfo = function (){
+                        document.write(`색상: ${this.color}, 사이즈: ${this.size} <br />`);
+            }
+
+            var television = new Tv("white", 60);
+            television.printInfo();
+
+
+      </script>
+</head>
+<body>
+      
+</body>
+</html>
