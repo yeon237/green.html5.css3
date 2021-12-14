@@ -25,6 +25,8 @@
         car.gearInfo();
         */
 
+
+        /*
         // 객체 생성 방법 4 - 프로토 타입
 
         function Car(color, gear) {
@@ -38,6 +40,28 @@
 
         var car2 = new Car("white", "auto");
         car2.printInfo();
+        */
+
+
+        // 객체 생성 방법 5 - ES6
+
+        class Car {
+            //생성자
+            constructor(color, gear){
+            this.color = color;
+            this.gear = gear;
+            }
+        
+            //메소드
+            printInfo() {
+                document.write(`색상: ${this.color}, 기어: ${this.gear} <br />`);
+            }
+
+        }
+
+        let car = new Car("black", "auto");
+        car.printInfo();
+
     </script>
 </head>
 <body>

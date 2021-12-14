@@ -98,7 +98,7 @@
             television2.printInfo();
             */
 
-
+            /*
             // 객체 생성 방법 4 - 프로토 타입
 
             function Tv(color, size) {
@@ -112,7 +112,44 @@
 
             var television = new Tv("white", 60);
             television.printInfo();
+            */
 
+            
+            // 객체 생성 방법 5 - ES6
+
+            class Tv {
+                  // 생성자
+                  constructor(color, size) {
+                        this.color = color;
+                        this.size = size;
+                  }
+
+                  // 메소드
+                  printInfo() {
+                        document.write(`색상: ${this.color}, 사이즈: ${this.size} <br />`);
+                  }
+            }
+
+            // let tv = new Tv("black", 50);
+            // tv.printInfo();
+
+            class lgTv extends Tv {
+                  printLG() {
+                        document.write(`엘지티비 입니다. <br />`);
+                  }
+            }
+
+            class samsungTv extends Tv {
+                  printSamsung() {
+                        document.write(`삼성티비 입니다. <br />`);
+                  }
+            }
+
+            let lg = new lgTv("black", 50);
+            let sam = new samsungTv();
+
+            lg.printLG();
+            lg.printInfo();
 
       </script>
 </head>

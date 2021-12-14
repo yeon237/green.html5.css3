@@ -39,6 +39,7 @@
         dog3.printInfo();
         */
 
+        /*
         // 객체 생성 방법 4 - 프로토 타입
         function Dog(name, situation) {
             this.name = name;
@@ -50,6 +51,26 @@
 
         var dog2 = new Dog("복돌이", "밥을 먹는다");
         dog2.printInfo();
+        */
+
+
+        // 객체 생성 방법 5 - ES6
+        class Dog {
+            //생성자
+            constructor(name, situation) {
+            this.name = name;
+            this.situation = situation;
+            }
+
+            //메소드
+            printInfo() {
+                document.write(`이름: ${this.name} <br /> 상황: ${this.situation} <br />`);
+            }
+
+        }
+
+        let dog = new Dog ("삐삐","짖는다");
+        dog.printInfo();
 
     </script>
 </head>
