@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+/* 초기화 */
+
+* {
+    margin: 0; padding: 0;
+    font-family: Arial, 'sans-serif';
+}
+
+a { text-decoration: none !important; }
+img { border: 0; }
+ul { list-style: none; }
+
+/* 헤더 */
+
+#main_header {
+    height: 390px;
+    background: gray;
+    color: white;
+}
+
+#main_header a {
+    color: white;
+}
+
+#main_header > .gnb_container {
+    background: black;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+#main_header .gnb {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+
+#main_header .logo {
+    float: left;
+    width: 190px;
+    margin-top: 12px;
+}
+
+#main_header ul.nav {
+    float: left;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+#main_header ul.nav > li {
+    float: left;
+    padding: 22px 17px;
+}
+
+#main_header ul.nav > li:nth-child(4), li:nth-child(5) {
+    display: none;
+}
+
+#main_header .setting {
+    float: right;
+    width: 21px;
+    text-align: right;
+    padding-top: 12px;
+}
+
+#main_header .trigger {
+    float: right;
+    width: 23px;
+    text-align: right;
+    padding-top: 4px;
+    display: none;
+}
+
+#main_header .trigger .close {
+    display: none;
+}
+
+
+/* active_path, active bar */
+
+#main_header > .active_path {
+    position: fixed;
+    width: 100%;
+    height: 1px;
+    background: #d8d8d8;
+    top: 60px;
+    z-index: 1;
+}
+
+#main_header > .active_path > .active_bar {
+    width: 81px;
+    height: 1px;
+    margin: 0px;
+    background: tomato;
+    display: none;
+}
+
+/* 하위메뉴 */
+
+#main_header .lnb_container {
+    display: none;
+    background: rgb(34, 34, 34);
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 61px;
+    z-index: 1;
+}
+
+#main_header .lnb_container > .lnb {
+    overflow: hidden;
+    margin: 0 auto;
+    display: none;
+}
+
+#main_header .lnb_container > .lnb > li {
+    float: left;
+    margin: 20px 10px 0 10px;
+}
+
+
+/* 푸터 */
+
+#main_footer {
+    height: 150px;
+}
+
+#main_footer > div:nth-child(1) {
+    background: rgb(240, 240, 240);
+    height: 50px;
+}
+
+#main_footer > div:nth-child(2) {
+    background: white;
+    height: 100px;
+}

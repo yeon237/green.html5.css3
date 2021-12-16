@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* 초기화 */
+
+* {
+    margin: 0; padding: 0;
+    font: normal 15px 'Arial';
+}
+
+a { text-decoration: none !important; }
+img { border: 0;}
+ul { list-style: none;}
+
+#container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    background: gray;
+}
+
+nav {
+    height: 100px;
+}
+
+section {
+    overflow: hidden;
+}
+
+footer {
+    height: 100px;
+    background: red;
+}
+
+
+@media screen and (max-width: 767px) { /* ~767px까지 */
+    section > article {
+        float: none;
+        width: 100;
+    }
+    
+    section > article:nth-child(1) {
+        background: green;
+        height: 900px;
+    }
+    
+    section > article:nth-child(2) {
+        background: purple;
+        height: 900px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) { /* 768px~959px까지 */
+    section > article {
+        float: left;
+    }
+    
+    section > article:nth-child(1) {
+        width: 300px;
+        background: green;
+        height: 900px;
+    }
+    
+    section > article:nth-child(2) {
+        width: 660px;
+        background: purple;
+        height: 900px;
+    }
+}
+
+@media screen and (min-width: 960px) {  /* 960px ~ 이상 */
+    section > article {
+        float: left;
+    }
+    
+    section > article:nth-child(1) {
+        width: 300px;
+        background: green;
+        height: 900px;
+    }
+    
+    section > article:nth-child(2) {
+        width: 660px;
+        background: purple;
+        height: 900px;
+    }
+}
+
