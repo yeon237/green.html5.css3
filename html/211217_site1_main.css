@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* 메인 컨텐츠 */
+
+#main_content {
+    background: #d8d8d8;
+}
+
+#main_content div {
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+#main_content > #main_container {
+    width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#main_container > #section {
+    width: 1200px;
+    height: 500px;
+    float: left;
+    margin: 0 auto;
+    padding-right: 40px;
+}
+
+#main_container > #section > #area_01 {
+    background-color: mediumpurple;
+    height: 300px;
+    
+}
+
+#main_container > #section > #area_02 {
+    background-color: cornflowerblue;
+    height: 300px;
+
+}
+
+
+#main_container > #aside {
+    width: 360px;
+    height: 500px;
+    float: right;
+    margin: 0 auto;
+    
+
+}
+#main_container > #aside > #banner_01 {
+    background-color: darkcyan;
+    height: 300px;
+}
+
+#main_container > #aside > #banner_02 {
+    background-color: darkgoldenrod;
+    height: 300px;
+}
