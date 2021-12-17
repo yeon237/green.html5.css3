@@ -94,3 +94,46 @@
     float: right;
 }
 
+
+/* 미디어 쿼리 
+주의점 : css속성 제일 밑에 작성해야한다. 공통사항 제외하고 변경하고싶은 사항 작성*/
+
+@media screen and (max-width:767px) {
+    #main_content > div {
+        width: 100%;
+    }
+
+    #main_content > #main_container > section {
+        width: 100%;
+    }
+
+    #main_content > #main_container > section > article {
+        width: 100%;
+    }
+
+    #main_content > #main_container > section > #weather_location a {
+        width: 100%;
+    }
+
+    #main_content > #main_container > aside {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    #main_content > div {
+        width: 100%;
+    }
+
+    #main_content > #main_container > section {
+        width: calc(100% - 210px); /* aside 위치를 잡아주기위해서 210px를 빼준다*/
+    }
+}
+
+@media screen and (max-width:767px) {
+
+}

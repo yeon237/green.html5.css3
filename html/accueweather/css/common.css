@@ -40,7 +40,7 @@ ul { list-style: none; }
 #main_header .logo {
     float: left;
     width: 190px;
-    margin-top: 12px;
+    margin-top: 16px;
 }
 
 #main_header ul.nav {
@@ -51,7 +51,7 @@ ul { list-style: none; }
 
 #main_header ul.nav > li {
     float: left;
-    padding: 22px 17px;
+    padding: 20px 17px;
 }
 
 #main_header ul.nav > li:nth-child(4), li:nth-child(5) {
@@ -62,14 +62,14 @@ ul { list-style: none; }
     float: right;
     width: 21px;
     text-align: right;
-    padding-top: 12px;
+    padding-top: 20px;
 }
 
 #main_header .trigger {
     float: right;
     width: 23px;
     text-align: right;
-    padding-top: 4px;
+    padding-top: 20px;
     display: none;
 }
 
@@ -130,9 +130,78 @@ ul { list-style: none; }
 #main_footer > div:nth-child(1) {
     background: rgb(240, 240, 240);
     height: 50px;
+    text-align: center;
+    line-height: 50px;
 }
 
 #main_footer > div:nth-child(2) {
     background: white;
     height: 100px;
+    padding-top: 30px;
+}
+
+#main_footer > div:nth-child(2) > div {
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* 미디어 쿼리 
+주의점 : css속성 제일 밑에 작성해야한다. 공통사항 제외하고 변경하고싶은 사항 작성*/
+
+@media screen and (max-width:767px) {
+    #main_header {
+        background: url("../img/425x450.jpg");
+        background-size: cover;
+    }
+
+    #main_header .gnb, .lnb {
+        width: 90vw;
+    }
+
+    #main_header ul.nav {
+        display: none;
+    }
+
+    #main_header .setting {
+        display: none;
+    }
+
+    #main_header .trigger {
+        display: block;
+    }
+
+    #main_footer > div:nth-child(2) > div {
+        font-size: 11px;
+        text-align: left;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    #main_header {
+        background: url("../img/768x450.jpg");
+        background-size: cover;
+    }
+
+    #main_header .gnb, .lnb {
+        width: 90vw;
+    }
+
+    #main_footer > div:nth-child(2) > div {
+        font-size: 11px;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    #main_header {
+        background: url("../img/1024x450.jpg");
+        background-size: cover;
+    }
+
+    #main_header .gnb, .lnb {
+        width: 960px;
+    }
+
 }
