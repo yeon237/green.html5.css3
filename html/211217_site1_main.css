@@ -12,40 +12,32 @@
 }
 
 #main_content > #main_container {
-    width: 1600px;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
 }
 
 #main_container > #section {
-    width: 1200px;
-    height: 500px;
+    width: 70%;
     float: left;
-    margin: 0 auto;
-    padding-right: 40px;
 }
 
 #main_container > #section > #area_01 {
     background-color: mediumpurple;
     height: 300px;
-    
 }
 
 #main_container > #section > #area_02 {
     background-color: cornflowerblue;
     height: 300px;
-
 }
 
 
 #main_container > #aside {
-    width: 360px;
-    height: 500px;
+    width: 20%;
     float: right;
-    margin: 0 auto;
-    
-
 }
+
 #main_container > #aside > #banner_01 {
     background-color: darkcyan;
     height: 300px;
@@ -54,4 +46,48 @@
 #main_container > #aside > #banner_02 {
     background-color: darkgoldenrod;
     height: 300px;
+}
+
+
+/* 미디어쿼리 */
+
+@media screen and (max-width:767px) {
+    #main_content > div {
+        width: 100%;
+    }
+
+    #main_content > #main_container > #section {
+        width: 100%;
+        float: none;
+    }
+
+    #main_content > #main_container > #section > article {
+        width: 100%;
+    }
+
+    #main_content > #main_container > #aside {
+        float: none;
+        width: 100%;
+        text-align: center;
+        display: block;
+        padding-right: 20px;
+    }
+
+
+    
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    #main_content > div {
+        width: 100%;
+    }
+
+    #main_content > #main_container > #section {
+        width: calc(100% - 400px);
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    
 }

@@ -62,7 +62,20 @@ ul { list-style: none;}
 }
 
 
+/* 푸터 */
 #main_footer {
     background-color: gray;
-    height: 68px;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
 }
+
+
+/* 미디어쿼리 */
+
+@media screen and (max-width:767px) {
+    #main_header > .main_gnb > .nav {
+        display: none;
+    }
+}
+
