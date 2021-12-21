@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* 초기화 */
+
+* {
+    margin: 0; padding: 0;
+    font-family: Arial, 'sans-serif';
+}
+
+a { text-decoration: none !important; }
+img { border: 0; }
+ul { list-style: none; }
+
+body { background-color: mintcream}
+
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    background-color: #3b3b3b;
+}
+
+#visual {
+    width: 100%;
+    height: 200px;
+    background-color: #6f6967;
+}
+
+#content1 {
+    overflow: hidden;
+}
+
+#content1 .banner1 {
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color: #9b9791;
+}
+
+#content1 .banner2 {
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color: #aea9a1;
+}
+
+#content2 { 
+    overflow: hidden;
+    background-color: #e5e5e5;
+    padding: 10px 0 10px 0;
+}
+
+#content2 .box1 {
+    float: left;
+    width: 280px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: lightgrey;
+}
+
+#content2 .box2 {
+    float: left;
+    width: 280px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: lightsteelblue;
+}
+
+#content2 .box3 {
+    float: left;
+    width: 280px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #a4afce;
+}
+
+#content2 .box4 {
+    float: left;
+    width: 280px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: lightslategray;
+}
+
+#content3 {
+    width: 100%;
+    height: 200px;
+    background-color: royalblue;
+}
+
+#footer {}
