@@ -93,7 +93,101 @@ body { background-color: mintcream}
 #content3 {
     width: 100%;
     height: 200px;
-    background-color: royalblue;
+    background-color: rosybrown;
 }
 
-#footer {}
+#footer {
+    width: 100%;
+    height: 100px;
+    background-color: grey;
+}
+
+/* 미디어쿼리 */
+
+@media screen and (max-width:767px) {
+
+    #content1 .banner1 {
+        width: 100%;
+        height: 200px;
+    }
+
+    #content1 .banner2 {
+        width: 100%;
+        height: 200px;
+        padding: 0 10px;
+
+    }
+
+    #content2 {
+        width: 100%;
+    }
+
+    #content2 .box1 {
+        width: 96%;
+        height: 200px;
+
+    }
+
+    #content2 .box2 {
+        width: 96%;
+        height: 200px;
+
+    }
+
+    #content2 .box3 {
+        width: 96%;
+        height: 200px;
+
+    }
+
+    #content2 .box4 {
+        width: 96%;
+        height: 200px;
+
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+
+    #content1 .banner1 {
+        width: 100%;
+        height: 200px;
+    }
+
+    #content1 .banner2 {
+        width: 100%;
+        height: 200px;
+
+    }
+
+    #content2 .box1 {
+        width: 31.333%;
+        height: 200px;
+
+    }
+
+    #content2 .box2 {
+        width: 31.333%;
+        height: 200px;
+
+    }
+
+    #content2 .box3 {
+        width: 31.333%;
+        height: 200px;
+
+    }
+
+    #content2 .box4 {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:1200px) {
+    #wrap {
+        width: 100%;
+    }
+}
