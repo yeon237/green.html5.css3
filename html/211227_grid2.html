@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-column-gap: 30px;
+            grid-row-gap: 20px;
+        }
+
+        .items {
+            padding: 10px;
+            background-color: #eee;
+        }
+
+        .items:nth-child(odd) {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="items">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus animi soluta, omnis fuga quod, saepe incidunt, quia ex minima neque laborum non in aperiam a modi libero exercitationem recusandae.</div>
+        <div class="items">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus animi soluta, omnis fuga quod, saepe incidunt, quia ex minima neque laborum non in aperiam a modi libero exercitationem recusandae.</div>
+        <div class="items">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus animi soluta, omnis fuga quod, saepe incidunt, quia ex minima neque laborum non in aperiam a modi libero exercitationem recusandae.</div>
+        <div class="items">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus animi soluta, omnis fuga quod, saepe incidunt, quia ex minima neque laborum non in aperiam a modi libero exercitationem recusandae.</div>
+        <div class="items">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus animi soluta, omnis fuga quod, saepe incidunt, quia ex minima neque laborum non in aperiam a modi libero exercitationem recusandae.</div>
+        <div class="items">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus animi soluta, omnis fuga quod, saepe incidunt, quia ex minima neque laborum non in aperiam a modi libero exercitationem recusandae.</div>
+    </div>
+</body>
+</html>

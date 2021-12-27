@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            /* grid-template-rows: 100px 200px; */
+            grid-template-rows: minmax(100px auto);
+        }
+
+        .items {
+            padding: 10px;
+            background-color: #eee;
+        }
+
+        .items:nth-child(odd) {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="items">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus animi soluta, omnis fuga quod, saepe incidunt, quia ex minima neque laborum non in aperiam a modi libero exercitationem recusandae.</div>
+        <div class="items">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus animi soluta, omnis fuga quod, saepe incidunt, quia ex minima neque laborum non in aperiam a modi libero exercitationem recusandae.</div>
+        <div class="items">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus animi soluta, omnis fuga quod, saepe incidunt, quia ex minima neque laborum non in aperiam a modi libero exercitationem recusandae.</div>
+        <div class="items">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus animi soluta, omnis fuga quod, saepe incidunt, quia ex minima neque laborum non in aperiam a modi libero exercitationem recusandae.</div>
+        <div class="items">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus animi soluta, omnis fuga quod, saepe incidunt, quia ex minima neque laborum non in aperiam a modi libero exercitationem recusandae.</div>
+    </div>
+</body>
+</html>
